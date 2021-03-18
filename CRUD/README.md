@@ -1,6 +1,4 @@
-Exercicio Proposto de CRUD para Treinamento SURE
-https://github.com/visure/visure-training
-
+Exercicio Proposto de CRUD para Treinamento
 
 Project Scope
 #POST
