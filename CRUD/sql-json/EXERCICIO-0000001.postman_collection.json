@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "a191ecca-0370-4d74-81bd-1f086cd616a5",
+		"name": "EXERCICIO-0000001",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1.0 - New User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": {\r\n        \"name\": \"Raphael Costa Bravim\",\r\n        \"birth\": \"1986/02/08\",\r\n        \"gender\": \"M\"\r\n    },\r\n    \"document\": {\r\n        \"document\": \"103.645.687-04\",\r\n        \"type\": \"CPF\",\r\n        \"nationality\": \"BRA\"\r\n    },\r\n    \"address\": {\r\n        \"zipcode\": \"29070-000\",\r\n        \"street\": \"Rua Professora ...\",\r\n        \"number\": \"405\",\r\n        \"city\": \"Vitória\",\r\n        \"state\": \"ES\",\r\n        \"country\": \"BRA\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				},
+				"description": "Register new user in database."
+			},
+			"response": []
+		},
+		{
+			"name": "2.1 - Gender Ratio",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"key\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"1"
+					]
+				},
+				"description": "Resume % value of each gender in database. "
+			},
+			"response": []
+		},
+		{
+			"name": "2.2 - Country Zones",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"key\": \"Sul\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/country_zones",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"country_zones"
+					]
+				},
+				"description": "Resume % value of each zone country in database. "
+			},
+			"response": []
+		},
+		{
+			"name": "2.3 - State Zone",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"key\": \"ES\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/state_zone",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"state_zone"
+					]
+				},
+				"description": "Resume % value of each state in database. "
+			},
+			"response": []
+		},
+		{
+			"name": "2.4 - Age Range",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/age_ratio",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"age_ratio"
+					]
+				},
+				"description": "Resume % value of age range, as bellow descript:\r\n(13-17, 18-24, 25-34, 35-44, 45-54, 55-64 and 65+)"
+			},
+			"response": []
+		},
+		{
+			"name": "3.0 - Update Data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"key\": \"103.645.687-04\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				},
+				"description": "Allow update all data user, using unique document number, provided by user previously. "
+			},
+			"response": []
+		},
+		{
+			"name": "4.0 - Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"key\": \"103.645.687-04\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				},
+				"description": "Erase all data user, using unique document as reference. In fact, we never erase information, that request just changes an atribute in database, makening impossible to access that information."
+			},
+			"response": []
+		}
+	]
+}
