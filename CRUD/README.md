@@ -25,8 +25,7 @@ Project Scope
 #DELETE
     1 - A partir da url (neste caso documento do usuario), APAGAR dados de um usuario específico.
     /delete/<document>
-        Neste caso os dados não deverão ser apagados, apenas o valor de "use_status" deve ser alterado
-        de 1 para 0, o que indica que o usuário ficará inativo no sistema, não participando assim das buscas do GET, por exemplo.
+        Neste caso os dados não deverão ser apagados, apenas inativados no sistema.
 
 References:
 https://flask.palletsprojects.com/en/1.1.x/views/
