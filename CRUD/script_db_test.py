@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-#testes diversos
+#testes diversos teste 2
 
 import http.client, json
 import random
