@@ -1,7 +1,7 @@
 import mysql.connector
 import http.client, mimetypes, json
 import random
-from datetime import datetime, timedelta #comentario para teste 2
+from datetime import datetime, timedelta
 
 name = ['Julio', 'Julia', 'Gabriele', 'Gabriel', 'Jonathan', 'Natan', 'Wagner', 'Adalgiza', 'João', 'Lucas', \
         'Mayara', 'Mariana', 'Aline', 'Alice', 'Renata', 'Marisbela', 'Rafael', 'Claudia', 'Vitória', 'Jorge', \
