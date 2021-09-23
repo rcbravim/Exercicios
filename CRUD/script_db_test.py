@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+#testes diversos
+
 import http.client, json
 import random
 from datetime import datetime, timedelta
